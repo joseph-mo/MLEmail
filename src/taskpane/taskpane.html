@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UBS Email Organizer</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"
+    />
+
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+      <h1 class="ms-font-su">UBS Email Organizer</h1>
+    </header>
+    <section id="sideload-msg" class="ms-welcome__main"></section>
+
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+      <h2 class="ms-font-xl"></h2>
+      <p><label id="item-subject"></label></p>
+      <p><label id="item-body"></label></p>
+      <p
+        id="emoji1"
+        style="display:none;font-size:30px;margin-bottom:0;padding-bottom:0;
+        margin-top:0;padding-top:0"
+        class="hidden"
+      >
+        &#128512;
+      </p>
+      <p
+        id="emoji2"
+        style="display:none;font-size:30px;margin-bottom:0;padding-bottom:0;
+        margin-top:0;padding-top:0"
+        class="hidden"
+      >
+        &#128545;
+      </p>
+      <p
+        id="emoji3"
+        style="display:none;font-size:30px;margin-bottom:0;padding-bottom:0;
+        margin-top:0;padding-top:0"
+        class="hidden"
+      >
+        &#128528;
+      </p>
+      <div
+        role="button"
+        id="run"
+        class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl"
+      >
+        <p><label id="item-footer"></label></p>
+        <span id="btn" class="ms-Button-label">Run</span>
+      </div>
+    </main>
+  </body>
+</html>
